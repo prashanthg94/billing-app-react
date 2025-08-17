@@ -1,0 +1,268 @@
+  body {
+    background: #213547;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  }
+
+  #root {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    color: #213547;
+    background-color: whitesmoke;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    user-select: none;
+    max-width: 100%;
+  }
+
+  button {
+    border-radius: 8px;
+    border: 1px solid #646cff;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    margin: 10px 15px;
+    transition: transform 0.4s ease;
+
+  }
+
+  button:hover {
+    filter: drop-shadow(0 0 1em #646cff);
+    background-color: aqua;
+    transform: scale(1.1);
+  }
+
+  input {
+    margin: 5px;
+    padding: 8px;
+    border: 2px solid #213547;
+    font-size: 15px;
+    font-weight: 550;
+    outline: none;
+    border-radius: 10px;
+
+
+  }
+
+  label {
+    font-weight: 500;
+    width: 130px;
+    align-self: center;
+    margin-left: 20px;
+
+  }
+
+  .added_items table {
+    margin: auto;
+    border: 2px solid rgb(86, 17, 96);
+    width: 500px;
+    flex-shrink: 0;
+    display: block;
+    white-space: nowrap;
+  }
+
+  .btn {
+    margin: 20px 30px;
+    padding: 5px;
+    width: 180px;
+  }
+
+  .bill {
+    border: 1px solid black;
+    background: linear-gradient(to right, rgb(137, 239, 171), rgba(75, 146, 251, 0.852));
+    border-radius: 10px;
+  }
+
+  .generate table {
+    margin: auto;
+    border: 2px solid rgb(86, 17, 96);
+    width: 700px;
+    margin-bottom: 30px;
+    color: black;
+
+  }
+
+  .printreset button {
+    margin: 10px;
+  }
+
+  .printreset button:hover {
+    background-color: aqua;
+  }
+
+  .generate {
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #ffffff;
+    margin: 30px auto;
+    width: 800px;
+  }
+h3, h4{
+  margin-bottom: 20px;
+}
+
+  h2 {
+    border-bottom: 2px solid #213547;
+    width: 120px;
+    margin: 10px auto;
+  }
+
+  .total {
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px 2px;
+    margin: 20px auto;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #ebed76dd;
+    max-width: fit-content;
+
+
+  }
+
+  .errorphone {
+    color: red;
+    white-space: nowrap;
+
+  }
+
+  .errorname {
+    color: red;
+    white-space: nowrap;
+  }
+
+  .error {
+    color: red;
+  }
+
+
+  .basic,
+  .phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    gap: 10px;
+    flex-wrap: wrap;
+
+  }
+
+  th:nth-child(1),
+  td:nth-child(1) {
+    /* Sl.no */
+    width: 60px;
+  }
+
+  th:nth-child(2),
+  td:nth-child(2) {
+    /* Product Name */
+    width: 200px;
+  }
+
+  th:nth-child(3),
+  td:nth-child(3) {
+    /* Quantity */
+    width: 100px;
+  }
+
+  th:nth-child(4),
+  td:nth-child(4) {
+    /* Price */
+    width: 120px;
+  }
+
+  th:nth-child(5),
+  td:nth-child(5) {
+    /* Total */
+    width: 70px;
+  }
+
+  th:nth-child(6),
+  td:nth-child(6) {
+    /* Total */
+    width: 150px;
+  }
+
+
+  .grand {
+    text-align: center;
+    box-shadow: 2px 2px 2px 2px black;
+    max-width: fit-content;
+    margin: 20px auto;
+    padding: 5px;
+    background-color: aquamarine;
+  }
+
+  input:focus {
+    transform: scale(1.05);
+    border: 2px solid red;
+    outline: none;
+    transition: transform 0.4s ease, border 0.4s ease;
+  }
+
+
+  @media (max-width: 768px) {
+    label {
+      width: 100%;
+      /* labels full width on mobile */
+      margin-left: 0;
+      margin-bottom: 5px;
+      text-align: left;
+    }
+
+    .basic,
+    .phone {
+      flex-direction: column;
+      /* stack inputs vertically on mobile */
+      align-items: flex-start;
+    }
+
+
+    button {
+      margin: 10px auto;
+      /* center buttons on mobile */
+      width: 90%;
+      /* buttons full width on mobile */
+      max-width: 250px;
+    }
+
+    .added_items table{
+      width: 100%;
+         overflow-x: auto;
+
+
+    }
+    
+.scroll{
+   overflow-x: auto;
+  width: 100%;
+}
+          
+
+    .bill,
+    .generate {
+      max-width: 100%;
+      padding: 1rem 0.5rem;
+    }
+
+    .price_details {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input {
+      max-width: 280px;
+    }
+
+  }
